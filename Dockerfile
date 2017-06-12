@@ -9,4 +9,7 @@ RUN apk --no-cache add --virtual .builddeps ca-certificates curl wget tar gzip &
     mv hugo /usr/local/bin/ && \
     rm -rf /srv/*
 
+ENTRYPOINT ["hugo"]
+
+CMD ["help"]
 
